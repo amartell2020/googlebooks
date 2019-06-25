@@ -1,0 +1,15 @@
+<h1>Results</h1>
+<h2>You searched for: <%= params[:book_title] %></h2>
+<div id="big">
+  <div class="item">
+    <div id="info">
+      <p>Title: <%=@first.title %></p>
+      <p>Author: <%=@first.authors %></p>
+      <a href="<%=@first.sale_info['buyLink'] %>">Buy It</a>
+    </div>
+    <div>
+      <img id="pic" src="<%=@first.image_link %>" alt="No Image Available">
+    </div>
+  </div>
+
+</div>
